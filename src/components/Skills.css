@@ -1,0 +1,46 @@
+/* src/components/Skills.css */
+
+.skills-section {
+    background: black; /* Background color */
+    color: white; /* Text color */
+    padding: 60px 20px; /* Padding around the section */
+    text-align: center; /* Center align text */
+  }
+  
+  .skills-section h2 {
+    font-size: 2.5rem;
+    color: yellow;
+    margin-bottom: 40px;
+  }
+  
+  .skills-content {
+    display: flex;
+    justify-content: space-around; /* Space out the skill categories */
+    flex-wrap: wrap; /* Wrap the categories on smaller screens */
+    box-shadow: 0 0 15px rgba(250, 250, 250, 0.3); /* Add some shadow for depth */
+
+  }
+  
+  .skill-category {
+    margin: 20px;
+    flex: 1;
+    min-width: 250px; /* Minimum width for each category */
+  }
+  
+  .skill-category h3 {
+    font-size: 1.8rem;
+    color: yellow;
+    margin-bottom: 20px;
+  }
+  
+  .skill-category ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skill-category ul li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: white;
+  }
+  

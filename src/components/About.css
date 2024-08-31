@@ -1,0 +1,93 @@
+/* src/components/About.css */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row; /* Default to row layout for larger screens */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    background: black; /* Background color */
+    color: white;
+    padding: 2rem; /* Adjust padding as needed */
+    min-height: 100vh; /* Full viewport height */
+    box-sizing: border-box; /* Include padding in height calculations */
+}
+
+.about-content {
+    flex: 1; /* Allow the content to take up available space */
+    max-width: 800px;
+    text-align: center; /* Center text horizontally */
+    margin-right: 2rem; /* Space between text and image */
+}
+
+.about-content h2 {
+    font-size: 4rem;
+    color: yellow;
+    margin-bottom: 1rem; /* Adjust margin as needed */
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.6;
+}
+
+.about-image-container {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.about-image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Add some shadow for depth */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column; /* Stack content and image vertically on smaller screens */
+        align-items: center; /* Center content horizontally */
+    }
+
+    .about-content {
+        margin-right: 0; /* Remove right margin on smaller screens */
+        text-align: center; /* Center text on smaller screens */
+    }
+
+    .about-image-container {
+        margin-top: 1rem; /* Space above image on smaller screens */
+    }
+
+    .about-content h2 {
+        font-size: 3rem; /* Adjust font size for smaller screens */
+    }
+
+    .about-content p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .about-image {
+        max-width: 100%; /* Ensure image fits within its container */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content h2 {
+        font-size: 2.5rem; /* Further adjust font size for very small screens */
+    }
+
+    .about-content p {
+        font-size: 0.9rem; /* Further adjust font size for very small screens */
+    }
+
+    .about-image {
+        max-width: 100%; /* Ensure image fits within its container */
+    }
+}

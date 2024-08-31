@@ -1,0 +1,168 @@
+/* src/components/Homepage.css */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: black;
+  color: white;
+  padding: 2rem;
+  position: relative; /* Ensure proper stacking context */
+}
+
+.homepage-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Center align content and image */
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 10%;
+  margin-bottom: 2rem; /* Space below homepage content */
+}
+
+.content-container {
+  text-align: center;
+  flex: 1; /* Allow content to take up available space */
+}
+
+.typed-text {
+  font-size: 4.5rem;
+  color: yellow;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.button-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  gap: 1rem;
+}
+
+.homepage-button {
+  background-color: yellow;
+  color: black;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.homepage-button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+.cartoon-container {
+  margin-left: 2rem;
+}
+
+.cartoon-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.sections-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px; /* Increased maximum width */
+  padding: 2rem;
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+section {
+  width: 100%;
+  max-width: 1400px; /* Increased maximum width */
+  min-height: 400px; /* Ensure a minimum height for sections */
+  margin: 2rem 0; /* Space between sections */
+  background: #222; /* Background for sections */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box; /* Include padding and border in the width and height */
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .homepage-content {
+    flex-direction: column; /* Stack content and image vertically */
+    align-items: center; /* Center content horizontally */
+  }
+
+  .cartoon-container {
+    margin-left: 0; /* Remove left margin */
+    margin-top: 2rem; /* Space above the image */
+  }
+
+  .content-container {
+    text-align: center;
+    margin-bottom: 1rem; /* Space below content container */
+  }
+
+  .typed-text {
+    font-size: 3rem; /* Adjust font size for smaller screens */
+  }
+
+  h2 {
+    font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 1rem; /* Space between buttons */
+  }
+
+  .homepage-button {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding: 0.5rem 1rem; /* Adjust button padding */
+  }
+
+  .sections-container {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  section {
+    margin: 1rem 0; /* Space between sections */
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .typed-text {
+    font-size: 2.5rem; /* Further adjust font size for very small screens */
+  }
+
+  h2 {
+    font-size: 1rem; /* Further adjust font size for very small screens */
+  }
+
+  .homepage-button {
+    font-size: 0.8rem; /* Further adjust font size for very small screens */
+    padding: 0.5rem 0.75rem; /* Further adjust button padding */
+  }
+
+  .sections-container {
+    padding: 0.5rem; /* Further adjust padding for very small screens */
+  }
+
+  section {
+    margin: 0.5rem 0; /* Space between sections */
+    padding: 0.5rem; /* Further adjust padding for very small screens */
+  }
+}

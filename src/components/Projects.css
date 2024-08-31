@@ -1,0 +1,91 @@
+/* src/components/Projects.css */
+
+.projects-section {
+  background: black; /* Background color */
+  color: white; /* Text color */
+  padding: 60px 20px; /* Padding around the section */
+  text-align: center; /* Center align text */
+}
+
+.projects-section h2 {
+  font-size: 2.5rem;
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+.project-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: row; /* Align image and info side by side */
+  gap: 20px; /* Space between image and info */
+  flex-wrap: wrap; /* Wrap content on smaller screens */
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3); /* Add some shadow for depth */
+  padding: 50px  ;
+  
+
+}
+
+.project-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.project-info {
+  text-align: left;
+  max-width: 500px;
+}
+
+.project-info h3 {
+  font-size: 2rem;
+  color: yellow;
+}
+
+.project-info p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0 0 10px;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: yellow;
+  text-decoration: none;
+  border: 1px solid yellow;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.project-link:hover {
+  background: yellow;
+  color: black;
+}
+
+.project-nav {
+  position: absolute;
+  top: 50%;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: yellow;
+  cursor: pointer;
+  padding: 0px;
+  transition: color 0.3s;
+}
+
+.nav-button:hover {
+  color: white;
+}
